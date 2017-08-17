@@ -1,0 +1,672 @@
+[
+    {
+        "key": "group_598d5bca6dda6",
+        "title": "Company Data",
+        "fields": [
+            {
+                "key": "field_598d6f037a92f",
+                "label": "Schema: Logo",
+                "name": "company_logo",
+                "type": "image",
+                "instructions": "Resolution max: 151x151",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_598d75e8b22e6",
+                            "operator": "!=",
+                            "value": "Person"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "35",
+                    "class": "",
+                    "id": ""
+                },
+                "return_format": "url",
+                "preview_size": "thumbnail",
+                "library": "uploadedTo",
+                "min_width": "",
+                "min_height": "",
+                "min_size": "",
+                "max_width": 151,
+                "max_height": 151,
+                "max_size": "",
+                "mime_types": "jpg, png"
+            },
+            {
+                "key": "field_598db0fa1cef7",
+                "label": "Schema: Photo of Buildung",
+                "name": "company_image",
+                "type": "image",
+                "instructions": "Resolution max: 200x200",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_598d75e8b22e6",
+                            "operator": "!=",
+                            "value": "Person"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "35",
+                    "class": "",
+                    "id": ""
+                },
+                "return_format": "url",
+                "preview_size": "thumbnail",
+                "library": "uploadedTo",
+                "min_width": "",
+                "min_height": "",
+                "min_size": "",
+                "max_width": 200,
+                "max_height": 200,
+                "max_size": "",
+                "mime_types": "jpg, png"
+            },
+            {
+                "key": "field_598d75e8b22e6",
+                "label": "Schema Type",
+                "name": "schema_type",
+                "type": "select",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "30",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "Organisation": "Organisation",
+                    "Store": "Store",
+                    "LocalBusiness": "Local Business",
+                    "Person": "Person",
+                    "Restaurant": "Restaurant"
+                },
+                "default_value": [
+                    "LocalBusiness"
+                ],
+                "allow_null": 0,
+                "multiple": 0,
+                "ui": 1,
+                "ajax": 0,
+                "return_format": "value",
+                "placeholder": ""
+            },
+            {
+                "key": "field_598d5fe753374",
+                "label": "Address",
+                "name": "",
+                "type": "tab",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "placement": "top",
+                "endpoint": 0
+            },
+            {
+                "key": "field_598d5bfc3cc2a",
+                "label": "Street",
+                "name": "address_street",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "50",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_598da40b04a1e",
+                "label": "Phone",
+                "name": "company_phone",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "50",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "+49",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_598d5c233cc2b",
+                "label": "Postal Code",
+                "name": "address_postal",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "30",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_598d5c933cc2c",
+                "label": "City",
+                "name": "address_locality",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "70",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_598d5caa3cc2d",
+                "label": "Region",
+                "name": "address_region",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_598d793f20d4a",
+                "label": "Country",
+                "name": "address_country",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_598d600553375",
+                "label": "Openings",
+                "name": "",
+                "type": "tab",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_598d75e8b22e6",
+                            "operator": "!=",
+                            "value": "Organisation"
+                        },
+                        {
+                            "field": "field_598d75e8b22e6",
+                            "operator": "!=",
+                            "value": "Person"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "placement": "top",
+                "endpoint": 0
+            },
+            {
+                "key": "field_598d63d35337c",
+                "label": "Opening Hours",
+                "name": "opening_hours",
+                "type": "repeater",
+                "instructions": "Open all day: 00:00 - 23:59",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "collapsed": "field_598d63f15337d",
+                "min": 0,
+                "max": 7,
+                "layout": "table",
+                "button_label": "Add Day",
+                "sub_fields": [
+                    {
+                        "key": "field_598d63f15337d",
+                        "label": "Days",
+                        "name": "days",
+                        "type": "select",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "40",
+                            "class": "",
+                            "id": ""
+                        },
+                        "choices": {
+                            "Mo": "Mo",
+                            "Tu": "Tu",
+                            "We": "We",
+                            "Th": "Th",
+                            "Fr": "Fr",
+                            "Sa": "Sa",
+                            "Su": "Su"
+                        },
+                        "default_value": [],
+                        "allow_null": 0,
+                        "multiple": 1,
+                        "ui": 1,
+                        "ajax": 0,
+                        "return_format": "value",
+                        "placeholder": ""
+                    },
+                    {
+                        "key": "field_598d64205337e",
+                        "label": "from",
+                        "name": "from",
+                        "type": "time_picker",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": [
+                            [
+                                {
+                                    "field": "field_598d96b160bcc",
+                                    "operator": "!=",
+                                    "value": "1"
+                                }
+                            ]
+                        ],
+                        "wrapper": {
+                            "width": "20",
+                            "class": "",
+                            "id": ""
+                        },
+                        "display_format": "H:i",
+                        "return_format": "H:i"
+                    },
+                    {
+                        "key": "field_598d64bd59579",
+                        "label": "to",
+                        "name": "to",
+                        "type": "time_picker",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": [
+                            [
+                                {
+                                    "field": "field_598d96b160bcc",
+                                    "operator": "!=",
+                                    "value": "1"
+                                }
+                            ]
+                        ],
+                        "wrapper": {
+                            "width": "20",
+                            "class": "",
+                            "id": ""
+                        },
+                        "display_format": "H:i",
+                        "return_format": "H:i"
+                    },
+                    {
+                        "key": "field_598d96b160bcc",
+                        "label": "Closed",
+                        "name": "closed",
+                        "type": "true_false",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "20",
+                            "class": "",
+                            "id": ""
+                        },
+                        "message": "",
+                        "default_value": 0,
+                        "ui": 1,
+                        "ui_on_text": "",
+                        "ui_off_text": ""
+                    }
+                ]
+            },
+            {
+                "key": "field_598d6692d5ea5",
+                "label": "Special Days",
+                "name": "special_days",
+                "type": "repeater",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "collapsed": "",
+                "min": 0,
+                "max": 0,
+                "layout": "table",
+                "button_label": "Add Date",
+                "sub_fields": [
+                    {
+                        "key": "field_598d6692d5ea7",
+                        "label": "Date: from",
+                        "name": "date_from",
+                        "type": "date_picker",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "20",
+                            "class": "",
+                            "id": ""
+                        },
+                        "display_format": "d.m.Y",
+                        "return_format": "Y-m-d",
+                        "first_day": 1
+                    },
+                    {
+                        "key": "field_598d9b07ccb41",
+                        "label": "Date: to",
+                        "name": "date_to",
+                        "type": "date_picker",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "20",
+                            "class": "",
+                            "id": ""
+                        },
+                        "display_format": "d.m.Y",
+                        "return_format": "Y-m-d",
+                        "first_day": 1
+                    },
+                    {
+                        "key": "field_598d9b14ccb42",
+                        "label": "Time: from",
+                        "name": "time_from",
+                        "type": "time_picker",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": [
+                            [
+                                {
+                                    "field": "field_598d9b53ccb43",
+                                    "operator": "!=",
+                                    "value": "1"
+                                }
+                            ]
+                        ],
+                        "wrapper": {
+                            "width": "20",
+                            "class": "",
+                            "id": ""
+                        },
+                        "display_format": "H:i",
+                        "return_format": "H:i"
+                    },
+                    {
+                        "key": "field_598d6692d5ea8",
+                        "label": "Time: to",
+                        "name": "time_to",
+                        "type": "time_picker",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": [
+                            [
+                                {
+                                    "field": "field_598d9b53ccb43",
+                                    "operator": "!=",
+                                    "value": "1"
+                                }
+                            ]
+                        ],
+                        "wrapper": {
+                            "width": "20",
+                            "class": "",
+                            "id": ""
+                        },
+                        "display_format": "H:i",
+                        "return_format": "H:i"
+                    },
+                    {
+                        "key": "field_598d9b53ccb43",
+                        "label": "Closed",
+                        "name": "closed",
+                        "type": "true_false",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "20",
+                            "class": "",
+                            "id": ""
+                        },
+                        "message": "",
+                        "default_value": 0,
+                        "ui": 1,
+                        "ui_on_text": "Ja",
+                        "ui_off_text": "Nein"
+                    }
+                ]
+            },
+            {
+                "key": "field_598d6cb0f5324",
+                "label": "Contact",
+                "name": "",
+                "type": "tab",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "placement": "top",
+                "endpoint": 0
+            },
+            {
+                "key": "field_598d6c63f5323",
+                "label": "Contact",
+                "name": "contact",
+                "type": "repeater",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "collapsed": "field_598d6ce7f5325",
+                "min": 0,
+                "max": 0,
+                "layout": "table",
+                "button_label": "Add Contact",
+                "sub_fields": [
+                    {
+                        "key": "field_598d6ce7f5325",
+                        "label": "Type",
+                        "name": "type",
+                        "type": "select",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "30",
+                            "class": "",
+                            "id": ""
+                        },
+                        "choices": {
+                            "customer support": "customer support",
+                            "technical support": "technical support",
+                            "billing support": "billing support",
+                            "bill payment": "bill payment",
+                            "sales": "sales",
+                            "reservations": "reservations",
+                            "credit card support": "credit card support",
+                            "emergency": "emergency",
+                            "baggage tracking": "baggage tracking",
+                            "roadside assistance": "roadside assistance",
+                            "package tracking": "package tracking"
+                        },
+                        "default_value": [
+                            "customer support"
+                        ],
+                        "allow_null": 0,
+                        "multiple": 0,
+                        "ui": 1,
+                        "ajax": 0,
+                        "return_format": "value",
+                        "placeholder": ""
+                    },
+                    {
+                        "key": "field_598d6e4df5326",
+                        "label": "Phone",
+                        "name": "phone",
+                        "type": "text",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "40",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "+49",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "key": "field_598d7d73f5e83",
+                        "label": "Option",
+                        "name": "option",
+                        "type": "select",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "30",
+                            "class": "",
+                            "id": ""
+                        },
+                        "choices": {
+                            "HearingImpairedSupported": "Hearing Impaired Supported",
+                            "TollFree": "Toll Free"
+                        },
+                        "default_value": [],
+                        "allow_null": 1,
+                        "multiple": 1,
+                        "ui": 1,
+                        "ajax": 0,
+                        "return_format": "value",
+                        "placeholder": ""
+                    }
+                ]
+            },
+            {
+                "key": "field_598d71b57a930",
+                "label": "Social Media",
+                "name": "social_media",
+                "type": "repeater",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "collapsed": "field_598d71d57a931",
+                "min": 0,
+                "max": 0,
+                "layout": "table",
+                "button_label": "Add URL",
+                "sub_fields": [
+                    {
+                        "key": "field_598d71d57a931",
+                        "label": "URL",
+                        "name": "url",
+                        "type": "url",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": ""
+                    }
+                ]
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "options_page",
+                    "operator": "==",
+                    "value": "general-options"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": 1,
+        "description": ""
+    }
+]
