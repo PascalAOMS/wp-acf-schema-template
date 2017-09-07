@@ -37,7 +37,7 @@
             },
             {
                 "key": "field_598db0fa1cef7",
-                "label": "Schema: Photo of Buildung",
+                "label": "Schema: Photo of Building",
                 "name": "company_image",
                 "type": "image",
                 "instructions": "Resolution max: 200x200",
